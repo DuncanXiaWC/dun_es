@@ -71,7 +71,7 @@ class DunEs
             'type'=>$type,
             'body'=>$data
         ];
-        var_dump($params);
+//        var_dump($params);
         return $this->es->index($params)['_id'];
     }
 
@@ -94,7 +94,7 @@ class DunEs
             ];
             $row_num[] = $datum['ROW_NUMBER'];
             $ids[] = $this->es->index($params)['_id'];
-            var_dump(sizeof($ids));
+//            var_dump(sizeof($ids));
         }
 
         return array_combine($row_num,$ids);
@@ -353,7 +353,7 @@ class DunEs
                 'doc'=>$datum['data']
             ];
             $this->es->update($params);
-            var_dump($datum['_id']);
+//            var_dump($datum['_id']);
         }
         return $newInsert;
     }
