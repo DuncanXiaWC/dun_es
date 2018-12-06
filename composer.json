@@ -1,0 +1,21 @@
+{
+    "name": "duncanxia/dun_es",
+    "description": "Elind Printer SDK",
+    "type": "sdk",
+    "require": {
+        "ruflin/elastica": "6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "duncan",
+            "email": "duncanxia97@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+          "duncanxia\\DunEs": "src/"
+        }
+      }
+}
